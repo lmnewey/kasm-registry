@@ -2,7 +2,7 @@
   "description": "test ws newey",
   "docker_registry": "https://docker2.newey.id.au/", 
   "image_src": "chromium.png",
-  "name": "my-ubuntu:test" ,
+  "name": "my-ubuntu1:test" ,
   "run_config": {
     "hostname": "kasm"
   },
