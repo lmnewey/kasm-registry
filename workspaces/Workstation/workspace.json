@@ -1,8 +1,8 @@
 {
   "description": "test ws newey",
-  "docker_registry": "https://registry.newey.id.au/", 
+  "docker_registry": "https://docker2.newey.id.au/", 
   "image_src": "chromium.png",
-  "name": "neweyws/test" ,
+  "name": "my-ubuntu:test" ,
   "run_config": {
     "hostname": "kasm"
   },
