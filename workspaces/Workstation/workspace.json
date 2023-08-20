@@ -1,6 +1,6 @@
 {
   "description": "test ws newey",
-  "docker_registry": "https://registry.newey.id.au/v2", 
+  "docker_registry": "https://registry.newey.id.au/", 
   "image_src": "chromium.png",
   "name": "neweyws/test" ,
   "run_config": {
