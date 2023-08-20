@@ -15,12 +15,11 @@
     }
   },
   "categories": [
-    "Browser"
+    "Desktop" 
   ],
-  "friendly_name": "Chromium",
+  "friendly_name": "NeweyWS Test",
   "architecture": [
-    "amd64",
-    "arm64"
+    "amd64"
   ],
   "compatibility": [
     "1.13.x",
