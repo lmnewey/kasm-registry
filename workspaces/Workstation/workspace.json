@@ -1,6 +1,6 @@
 {
   "description": "test ws newey",
-  "docker_registry": "https://docker2.newey.id.au/", 
+  "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "chromium.png",
   "name": "my-ubuntu:test" ,
   "run_config": {
