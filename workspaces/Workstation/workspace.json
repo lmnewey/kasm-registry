@@ -2,7 +2,7 @@
   "description": "test ws newey",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "chromium.png",
-  "name": "my-ubuntu:test" ,
+  "name": "my-ubuntu:latest" ,
   "run_config": {
     "hostname": "kasm"
   },
@@ -15,7 +15,7 @@
     }
   },
   "categories": [
-    "Desktop" 
+    "Workstation" 
   ],
   "friendly_name": "NeweyWS Test1",
   "architecture": [
@@ -25,5 +25,5 @@
     "1.13.x",
     "1.14.x"
   ],
-  "uncompressed_size_mb": 2170
+  "uncompressed_size_mb": 21700
 }
