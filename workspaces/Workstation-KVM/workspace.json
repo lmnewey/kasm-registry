@@ -5,6 +5,7 @@
   "name": "docker2.newey.id.au/workstation/dotnet-kvm:23008232048",
   "run_config": {
     "hostname": "kasm",
+    "user": "root",
 "devices": [
     "/dev/kvm:/dev/kvm:rwm"
   ] 
