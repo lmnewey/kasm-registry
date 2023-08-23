@@ -2,7 +2,7 @@
   "description": "KVm nested Virtualization Development Environment",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "ubuntuwsdn.png",  
-  "name": "docker2.newey.id.au/workstation/dotnet-kvm:latest",
+  "name": "docker2.newey.id.au/workstation/dotnet-kvm:23008232048",
   "run_config": {
     "hostname": "kasm",
 "devices": [
