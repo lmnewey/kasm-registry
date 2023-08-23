@@ -2,7 +2,7 @@
   "description": "DotNet Development Environment",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "ubuntuwsdn.png",  
-  "name": "docker2.newey.id.au/workstation/dotnetcore-dev:latest",
+  "name": "docker2.newey.id.au/workstation/dotnet-dev:latest",
   "run_config": {
     "hostname": "kasm"
   },
