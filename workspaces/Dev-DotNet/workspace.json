@@ -1,0 +1,29 @@
+{
+  "description": "DotNet Development Environment",
+  "docker_registry": "https://docker2.newey.id.au/v2/", 
+  "image_src": "ubuntuwsdn.png",  
+  "name": "docker2.newey.id.au/workstation/dotnetcore-dev:latest",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Workstation" 
+  ],
+  "friendly_name": "Dotnet" ,
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x"
+  ],
+  "uncompressed_size_mb": 7000
+}
