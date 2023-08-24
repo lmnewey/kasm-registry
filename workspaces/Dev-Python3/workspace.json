@@ -2,7 +2,7 @@
   "description": "Pyhton3 Development Environment",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "ubuntuwsp3.png",  
-  "name": "docker2.newey.id.au/workstation/dotnet-dev:latest",
+  "name": "docker2.newey.id.au/workstation/python-dev:23008240920", 
   "run_config": {
     "hostname": "kasm"
   },
