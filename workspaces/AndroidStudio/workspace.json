@@ -1,7 +1,7 @@
 {
   "description": "Android Development Environment",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
-  "image_src": "anstudi.png",   
+  "image_src": "anstudio.png",   
   "name": "docker2.newey.id.au/workstation/androidstudio:base", 
   "run_config": {
     "hostname": "kasm"
