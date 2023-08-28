@@ -1,0 +1,29 @@
+{
+  "description": "Code Project AI Development Environment",
+  "docker_registry": "https://docker2.newey.id.au/v2/", 
+  "image_src": "codeproject.png",  
+  "name": "docker2.newey.id.au/dev/code-project-ai:base",  
+  "run_config": {
+    "hostname": "kasm-Code_project_ai"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Workstation" 
+  ],
+  "friendly_name": "Code Project Ai" ,
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x"
+  ],
+  "uncompressed_size_mb": 7000
+}
