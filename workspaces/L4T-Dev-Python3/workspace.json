@@ -6,6 +6,10 @@
   "run_config": {
     "hostname": "Jetson-Kasm-{{user.username}}",
     "user": "root",
+      "environment": {
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:$LD_LIBRARY_PATH",
+    "CUDA_HOME": "/usr/local/cuda"
+  },
     "devices": [      
       "/dev/nvidia0:/dev/nvidia0:rwm",
       "/dev/nvhost-nvdec:/dev/nvhost-nvdec:rwm",
@@ -13,7 +17,8 @@
       "/dev/nvhost-ctrl-vi:/dev/nvhost-ctrl-vi:rwm",
       "/dev/nvhost-msenc:/dev/nvhost-msenc:rwm",
       "/dev/nvhost-nvdec:/dev/nvhost-nvdec:rwm"
-    ]
+    ],
+    "gpus": "all",
   },
   "exec_config": {
     "go": {
