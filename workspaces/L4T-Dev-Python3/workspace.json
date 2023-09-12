@@ -4,7 +4,16 @@
   "image_src": "ubuntuwsp3.png",  
   "name": "docker2.newey.id.au/jetson/l4t-python-dev:alpha1", 
   "run_config": {
-    "hostname": "Jetson-Kasm-{{user.username}}"
+    "hostname": "Jetson-Kasm-{{user.username}}",
+    "user": "root",
+    "devices": [      
+      "/dev/nvidia0:/dev/nvidia0:rwm",
+      "/dev/nvhost-nvdec:/dev/nvhost-nvdec:rwm",
+      "/dev/nvhost-nvenc:/dev/nvhost-nvenc:rwm",
+      "/dev/nvhost-ctrl-vi:/dev/nvhost-ctrl-vi:rwm",
+      "/dev/nvhost-msenc:/dev/nvhost-msenc:rwm",
+      "/dev/nvhost-nvdec:/dev/nvhost-nvdec:rwm"
+    ]
   },
   "exec_config": {
     "go": {
