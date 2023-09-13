@@ -13,8 +13,7 @@
   "devices": [
     "/dev/nvgpu:/dev/nvgpu:rwm",
     "/dev/nvhost-nvdec1:/dev/nvhost-nvdec:1rwm",
-    "/dev/nvhost-nvenc1:/dev/nvhost-nvenc1:rwm",
-    "/dev/nvhost-ctrl-vi:/dev/nvhost-ctrl-vi:rwm",
+    "/dev/nvhost-nvenc1:/dev/nvhost-nvenc1:rwm",    
     "/dev/nvhost-msenc:/dev/nvhost-msenc:rwm"
   ]
   },
