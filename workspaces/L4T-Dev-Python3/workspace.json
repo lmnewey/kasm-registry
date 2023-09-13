@@ -2,7 +2,7 @@
   "description": "Python3 Development Environment",
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "ubuntuwsp3.png",  
-  "name": "docker2.newey.id.au/jetson/l4t-python-dev:alpha", 
+  "name": "docker2.newey.id.au/jetson/l4t-python-dev:alpha1", 
   "run_config": {  
   "hostname": "Jetson-Kasm",
   "user": "root",
