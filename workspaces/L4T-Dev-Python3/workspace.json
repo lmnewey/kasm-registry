@@ -3,8 +3,7 @@
   "docker_registry": "https://docker2.newey.id.au/v2/", 
   "image_src": "ubuntuwsp3.png",  
   "name": "docker2.newey.id.au/jetson/l4t-python-fchat:alpha", 
-  "run_config": {
-   {
+  "run_config": {  
   "hostname": "Jetson-Kasm",
   "user": "root",
   "environment": {
