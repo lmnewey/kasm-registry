@@ -20,6 +20,10 @@
   ]
   },
   "exec_config": {
+    "first_launch":{
+      "user":"root",
+      "cmd":"bash -c 'apt-get update && apt-get install -y sudo && echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
+  },
     "go": {
       "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
     },
