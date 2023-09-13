@@ -1,0 +1,46 @@
+{
+  "description": "Python3 LLM Development Environment",
+  "docker_registry": "https://docker2.newey.id.au/v2/", 
+  "image_src": "ubuntuwsp3.png",  
+  "name": "docker2.newey.id.au/jetson/l4t-python-dev:alpha1", 
+  "run_config": {
+   {
+  "hostname": "Jetson-Kasm-LLM",
+  "user": "root",
+  "environment": {
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:$LD_LIBRARY_PATH",
+    "CUDA_HOME": "/usr/local/cuda"
+  },
+  "devices": [
+    "/dev/nvgpu:/dev/nvgpu:rwm",
+    "/dev/nvhost-nvdec1:/dev/nvhost-nvdec:1rwm",
+    "/dev/nvhost-nvenc1:/dev/nvhost-nvenc1:rwm",
+    "/dev/nvhost-ctrl-vi:/dev/nvhost-ctrl-vi:rwm",
+    "/dev/nvhost-msenc:/dev/nvhost-msenc:rwm"
+  ]
+  },
+  "exec_config": {
+    "first_launch":{
+      "user":"root",
+      "cmd":"bash -c 'apt-get update && apt-get install -y sudo && echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
+  },
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Workstation" 
+  ],
+  "friendly_name": "L4T-LLM Python 3" ,
+  "architecture": [
+    "arm64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x"
+  ],
+  "uncompressed_size_mb": 7000
+}
